@@ -56,14 +56,14 @@ Author URI:
     --inGPMainColorTransparent: rgba(9,105,195,0.05);
     --inGPMainColorDark: #002745;
     --inGPMainColorLight: #e6f0f9;
-    --inGPSecondaryColor: #fff0d9;
-    --inGPSecondaryColorLight: #FFF8EC;
+    --inGPSecondaryColor: #80DBFF;
+    --inGPSecondaryColorLight: #ecf2ff;
     --inGPLightGrayColor: #dedede;
     --inGPDarkGrayColor: #999;
 }
 
 body {
-    font-family: 'Poppins',-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-family: 'Roboto', sans-serif;
     color: var(--inGPTextColor);
     font-weight: 300;
     font-feature-settings: 'kern';
@@ -71,6 +71,17 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 } 
+.font-indx {
+    font-family: 'Makisupa';
+    src: url('../fonts/Makisupa.eot');
+    src: url('../fonts/Makisupa.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Makisupa.woff2') format('woff2'),
+        url('../fonts/Makisupa.woff') format('woff'),
+        url('../fonts/Makisupa.ttf') format('truetype'),
+        url('../fonts/Makisupa.svg#Makisupa') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 a {
     color: var(--inGPMainColor);
     text-decoration: none;
@@ -130,7 +141,6 @@ a:hover {
 .inGP-section-h2 {
     font-weight: 700;
     font-size: 48px;
-    letter-spacing: -2px;
 }
 .inGP-animate-in.inGP-animate-in-top {
     transform: translateY(20px);
@@ -239,11 +249,13 @@ a:hover {
     height: 80px;
 }
 .inGP-logo > a {
+    display:flex;
+    justify-content: center;
+    align-items: center;
     color: var(--inGPTextColor);
     text-decoration: none;
     font-size: 25px;
     font-weight: 700;
-    letter-spacing: -1px;
     transition: var(--inGPHoverTransition);
     transition-property: opacity;
 }
@@ -672,7 +684,6 @@ a:hover {
 .inGP-hero h1 {
     font-size: 76px;
     line-height: 84px;
-    letter-spacing: -3px;
     font-weight: 700;
 }
 .inGP-hero-subtitle {
@@ -1430,7 +1441,6 @@ a:hover {
 .inGP-page-header-simple h1 {
     font-weight: 700;
     font-size: 48px;
-    letter-spacing: -2px;
 }
 .inGP-page-image-hero {
     background-color: var(--inGPMainColorLight);
@@ -1447,7 +1457,6 @@ a:hover {
 .inGP-page-image-hero h1 {
     font-weight: 700;
     font-size: 58px;
-    letter-spacing: -2px;
     color: #fff;
 }
 .inGP-no-hero {
@@ -1939,7 +1948,6 @@ a:hover {
 .inGP-jobs-tab-pane-content h3 {
     font-weight: 700;
     font-size: 28px;
-    letter-spacing: -1px;
 }
 .inGP-jobs-tab-pane-company-location {
     font-size: 15px;
@@ -3096,7 +3104,6 @@ a:hover {
 .inGP-single-job-content h1 {
     font-weight: 700;
     font-size: 34px;
-    letter-spacing: -1px;
 }
 .inGP-single-job-content.inGP-has-columns {
     margin-top: 80px;
@@ -3292,7 +3299,6 @@ a:hover {
 .inGP-subsection-h2 {
     font-weight: 700;
     font-size: 28px;
-    letter-spacing: -1px;
 }
 
 /**
@@ -3431,7 +3437,6 @@ a:hover {
 .inGP-single-company-hero-title h1 {
     font-weight: 700;
     font-size: 34px;
-    letter-spacing: -1px;
     color: #fff;
 }
 .inGP-single-company-hero-location {
@@ -3446,7 +3451,6 @@ a:hover {
 .inGP-single-company-content h2 {
     font-weight: 700;
     font-size: 28px;
-    letter-spacing: -1px;
     margin-bottom: 30px;
 }
 .inGP-single-company-content p {
@@ -3754,7 +3758,6 @@ a:hover {
 }
 .inGP-dashboard-content-details h1 {
     font-size: 38px;
-    letter-spacing: -2px;
     font-weight: 700;
 }
 .inGP-dashboard-stats-card {
@@ -3782,7 +3785,6 @@ a:hover {
 .inGP-dashboard-stats-card-info-number {
     font-weight: 600;
     font-size: 42px;
-    letter-spacing: -2px;
     line-height: 42px;
 }
 .inGP-dashboard-stats-card-info-text {
@@ -3799,7 +3801,6 @@ a:hover {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 30px;
-    letter-spacing: -1px;
 }
 .inGP-dashboard-chart-container {
     border-radius: 30px;
@@ -3809,7 +3810,6 @@ a:hover {
 .inGP-dashboard-chart-value {
     font-weight: 600;
     font-size: 42px;
-    letter-spacing: -2px;
     line-height: 42px;
 }
 .inGP-dashboard-chart-percent,
@@ -4406,7 +4406,6 @@ a:hover {
 .inGP-single-candidate-hero-name h1 {
     font-weight: 700;
     font-size: 34px;
-    letter-spacing: -1px;
     color: #fff;
 }
 .inGP-single-candidate-hero-title {
@@ -4418,7 +4417,6 @@ a:hover {
 .inGP-single-candidate-content h2 {
     font-weight: 700;
     font-size: 28px;
-    letter-spacing: -1px;
     margin-bottom: 30px;
 }
 .inGP-single-candidate-content p {
@@ -4796,7 +4794,6 @@ a:hover {
 }
 .inGP-blog-hero h1 {
     font-size: 48px;
-    letter-spacing: -2px;
     font-weight: 700;
 }
 .inGP-blog-featured-posts-carousel {
@@ -4835,7 +4832,6 @@ a:hover {
 .inGP-featured-posts-item-title {
     font-weight: 700;
     font-size: 34px;
-    letter-spacing: -1px;
     color: #fff;
 }
 .inGP-featured-posts-item-summary {
@@ -5039,7 +5035,6 @@ a:hover {
 .inGP-single-blog-content h2 {
     font-weight: 700;
     font-size: 24px;
-    letter-spacing: -1px;
     margin-bottom: 1rem;
 }
 .inGP-single-blog-content img {
@@ -5319,7 +5314,6 @@ ol.inGP-comments-list {
 .inGP-sign-hero-form h5 {
     font-weight: 600;
     font-size: 22px;
-    letter-spacing: -1px;
 }
 .inGP-sign-hero-form .form-control {
     border-radius: 30px;
@@ -5405,7 +5399,6 @@ ol.inGP-comments-list {
 .modal-title {
     font-weight: 600;
     font-size: 22px;
-    letter-spacing: -1px;
 }
 .inGP-user-modal .modal-title {
     padding: 0 40px;
@@ -5484,7 +5477,6 @@ ol.inGP-comments-list {
     text-decoration: none;
     font-size: 30px;
     font-weight: 700;
-    letter-spacing: -1px;
     transition: var(--inGPHoverTransition);
     transition-property: opacity;
 }
@@ -5636,7 +5628,6 @@ ol.inGP-comments-list {
     .inGP-hero h1 {
         font-size: 64px;
         line-height: 72px;
-        letter-spacing: -2px;
     }
     .inGP-hero-card,
     .inGP-hero-card-dark,
@@ -5832,7 +5823,6 @@ ol.inGP-comments-list {
     .inGP-page-header-simple h1,
     .inGP-blog-hero h1 {
         font-size: 36px;
-        letter-spacing: -1px;
     }
     .inGP-posts-card-2-fig {
         width: 260px;
@@ -5854,7 +5844,6 @@ ol.inGP-comments-list {
     .inGP-hero h1 {
         font-size: 48px;
         line-height: 56px;
-        letter-spacing: -2px;
     }
     .inGP-hero-form-round.inGP-large {
         height: auto;
@@ -5874,7 +5863,6 @@ ol.inGP-comments-list {
     .inGP-page-header-simple h1,
     .inGP-blog-hero h1 {
         font-size: calc(1.325rem + .9vw);
-        letter-spacing: -1px;
     }
     .inGP-promo-img {
         border-radius: 30px;
@@ -5971,7 +5959,6 @@ ol.inGP-comments-list {
     }
     .inGP-dashboard-content-details h1 {
         font-size: 28px;
-        letter-spacing: -1px;
     }
     .inGP-posts-card-2 {
         flex-direction: column;
@@ -5993,7 +5980,6 @@ ol.inGP-comments-list {
     }
     .inGP-page-image-hero h1 {
         font-size: calc(1.625rem + .9vw);
-        letter-spacing: -1px;
     }
     .inGP-footer-social ul li {
         margin-left: 0;
@@ -6033,7 +6019,6 @@ ol.inGP-comments-list {
     .inGP-hero h1 {
         font-size: 36px;
         line-height: 44px;
-        letter-spacing: -1px;
     }
     .inGP-hero-caption {
         margin-top: 120px;

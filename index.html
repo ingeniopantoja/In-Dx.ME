@@ -1,52 +1,73 @@
 <!doctype html>
-<html lang="en" class="inGP-root">
+<html lang="es" class="inGP-root">
     
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+        <link rel="shortcut icon" href="media/images/favicon.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com/">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preload" href="assets/fonts/Makisupa.woff2" as="font" type="font/woff2" crossorigin>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
         <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
         <link rel="stylesheet" href="assets/css/animate.css">
         <link rel="stylesheet" href="assets/css/style.css">
 
-        <!-- Google Font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com/">
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&amp;display=swap" rel="stylesheet">
-
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="57x57" href="master/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="master/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="master/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="master/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="master/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="master/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="master/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="master/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="master/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="master/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="master/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="master/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="master/favicon/favicon-16x16.png">
-        <link rel="manifest" href="master/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="master/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-        
-        <!-- Titulo -->
-        <title>In-Dx</title>
+        <title>Jobster - Home v4</title>
     </head>
     <body>
         <div class="inGP-preloader"><span>Loading...</span></div>
-
+        <!-- Menu  -->
         <header class="inGP-header fixed-top inGP-bigger">
             <div class="inGP-container">
+
                 <div class="inGP-header-container">
-                    <div class="inGP-logo">
-                        <a href="index.html" class="inGP-animate">In-Dx<span style="color: var(--inGPMainColor)"> ME</span></a>
+                    <!-- Logo de Menu -->
+                    <div class="inGP-logo font-indx">
+                        <a href="index.html" class="inGP-animate">In-Dx <img src="master/me-icono.svg" height="30px" style="padding-left: 5px;" alt=""></a>
+                    </div>
+                    <!-- Menu de Movil -->
+                    <div class="inGP-nav-trigger navbar d-xl-none flex-fill">
+                        <a role="button" data-bs-toggle="offcanvas" data-bs-target="#inGPMobileNav" aria-controls="inGPMobileNav">
+                            <div class="inGP-line-1"></div>
+                            <div class="inGP-line-2"></div>
+                            <div class="inGP-line-3"></div>
+                        </a>
+                        <div class="offcanvas offcanvas-start inGP-nav-mobile-container" tabindex="-1" id="inGPMobileNav">
+                            <!-- Logo de Menu -->
+                            <div class="offcanvas-header">
+                                <div class="inGP-logo font-indx">
+                                    <a href="index.html" class="inGP-animate">In-Dx <img src="master/me-icono.svg" height="30px" style="padding-left: 5px;" alt=""></a>
+                                </div>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <nav class="inGP-nav-mobile">
+                                    <ul class="navbar-nav justify-content-end flex-grow-1">
+                                        <li class="nav-item"><a href="index.html">Home</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Menu de Escritorio -->
+                    <div class="inGP-header-right">
+                        <nav class="inGP-nav dropdown-hover-all d-none d-xl-block">
+                            <ul>
+                                <li class="dropdown">
+                                    <a href="index.html" >Home</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- Botones de Accion -->
+                        <nav class="inGP-user-nav inGP-on-light d-none d-sm-flex">
+                            <a data-bs-toggle="modal" href="#inGP-signin-modal" class="btn rounded-pill inGP-nav-btn">Mi Cuenta</a>
+                            <a data-bs-toggle="modal" href="#inGP-signup-modal" class="btn rounded-pill inGP-user-nav-trigger" role="button">Unirse</a>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -57,8 +78,33 @@
                 <div class="inGP-hero-boxed-content" style="background-color: var(--inGPMainColorLight);">
                     <div class="row align-items-center justify-content-between">
                         <div class="col-12 col-xl-6 col-xxl-5">
-                            <h1>In-Dx <span style="color: var(--inGPMainColor);"> ME</span><br>Construimos el futuro</h1>
-                            <div class="inGP-hero-subtitle mt-3 mt-lg-4">y tu formaras parte de elló</div>
+                            <h1 class="font-indx inGP-animate">INDEX</h1>
+                            <h2 class="font-indx">Gestiona tu historia</h2>
+                            <div class="inGP-hero-form inGP-hero-form-round inGP-bigger mt-3 mt-lg-4">
+                                <form class="row gx-3 align-items-center" action="https://pixelprime.co/themes/jobster/jobs-list-1.html">
+
+                        
+                                    <div class="col-12 col-md-auto">
+                                        <button class="font-indx" style="font-size: 30px;" >ME</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="inGP-hero-searches-container">
+                                <div class="inGP-hero-searches-label">Forma parte del equípo</div>
+                                <div class="inGP-hero-searches">
+                                    <div class="inGP-hero-searches-items">
+                                        <a href="jobs-list-1.html">Amas de casa</a>
+                                        <a href="jobs-list-1.html">Tiempo parcial</a>
+                                        <a href="jobs-list-1.html">Administración</a>
+                                        <a href="jobs-list-1.html">Finanzas</a>
+                                        <a href="jobs-list-1.html">Ventas</a>
+                                        <a href="jobs-list-1.html">IT</a>
+                                        <a href="jobs-list-1.html">Ingeniería</a>
+                                        <a href="jobs-list-1.html">Fabricación</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="d-none d-xl-block col-xl-4 col-xxl-5 position-relative">
                             <div class="inGP-hero-boxed-circulars inGP-animate-circles-bounce">
@@ -90,12 +136,23 @@
                                         <div class="inGP-hero-boxed-info-card-big-icon">
                                             <img src="media/images/service-2-icon.png" alt="Job Fit Scoring">
                                         </div>
+                                        <div class="inGP-hero-boxed-info-card-big-title">un perfil único</div>
+                                        <div class="inGP-hero-boxed-info-card-big-text inGP-text-light">integra toda tu vidad digital en un solo lugar</div>
                                     </div>
                                 </div>
                                 <div class="inGP-hero-boxed-info-card-small inGP-animate-info-card">
                                     <div class="inGP-hero-boxed-info-card-small-content">
                                         <div class="inGP-hero-boxed-info-card-small-icon">
                                             <img src="media/images/service-1-icon.png" alt="Full-service recruiting">
+                                        </div>
+                                        <div class="inGP-hero-boxed-info-card-small-title">Personalizable y multipropósito</div>
+                                    </div>
+                                </div>
+                                <div class="inGP-hero-boxed-info-list-container inGP-animate-info-card">
+                                    <div class="inGP-hero-boxed-info-list">
+                                        <div class="inGP-hero-boxed-info-list-item">
+                                            <div class="inGP-hero-boxed-info-list-item-number">+99<span>Funciones</span></div>
+                                            <div class="inGP-hero-boxed-info-list-item-description">Esenciales</div>
                                         </div>
                                     </div>
                                 </div>
@@ -106,15 +163,14 @@
             </div>
         </section>
 
+
+        <!-- Footer -->
         <footer class="inGP-main-footer mt-100">
             <div class="inGP-main-footer-bottom" style="background-color: var(--inGPSecondaryColor);">
                 <div class="inGP-container">
                     <div class="row justify-content-between align-items-center">
                         <div class="col-lg-auto">
-                            <div class="inGP-footer-copyright inGP-text-light">
-                                Founded by ✒️<a href="https://soynovauno.com/" target="_blank" rel="noopener">SOYNOVAUNO</a>                        
-                            </div>
-
+                            <div class="inGP-footer-copyright inGP-text-light">© All Right Reserved.</div>
                         </div>
                         <div class="col-lg-auto">
                             <div class="inGP-footer-social mt-3 mt-lg-0">
@@ -131,6 +187,7 @@
             </div>
         </footer>
 
+        <!-- Modal - Inicio de Seccion -->
         <div class="modal fade inGP-user-modal" id="inGP-signin-modal" aria-hidden="true" aria-labelledby="signinModal" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -141,24 +198,28 @@
                         <div class="inGP-user-modal-fig text-center">
                             <img src="media/images/signin-fig.png" alt="Sign in">
                         </div>
-                        <h5 class="modal-title text-center mt-4" id="signinModal">Welcome back!</h5>
+                        <h5 class="modal-title text-center mt-4" id="signinModal">
+                            ¡Qué bueno! -  
+                            Verte de nuevo 
+                             </h5>
                         <form class="mt-4">
                             <div class="form-floating mb-3">
                                 <input type="email" class="form-control" id="inGP-signin-email" placeholder="Email address">
-                                <label for="inGP-signin-email">Email address</label>
+                                <label for="inGP-signin-email">Correo Electrónico</label>
                                 <span class="fa fa-envelope-o"></span>
                             </div>
-                            <div class="form-floating mb-3">
+                            <div class="form-floating">
                                 <input type="password" class="form-control" id="inGP-signin-password" placeholder="Password">
-                                <label for="inGP-signin-password">Password</label>
+                                <label for="inGP-signin-password">Contraseña</label>
                                 <span class="fa fa-lock"></span>
                             </div>
-                            <a href="#" class="btn rounded-pill inGP-modal-cta">Continue</a>
-                            <div class="mt-4 text-center inGP-modal-small">
-                                <a href="#" class="inGP-modal-link">Forgot password</a>
+                            <!-- OJO que aparezca al primer intento fallido -->
+                            <div class="mb-3 text-center inGP-modal-small">
+                                <a href="#" class="inGP-modal-link">¿Has olvidado <span style="font-size: 25px;">🤨</span> tu contraseña?</a>
                             </div>
+                            <a href="#" class="btn rounded-pill inGP-modal-cta">Iniciar Sesión</a>
                             <div class="mt-4 text-center inGP-modal-small">
-                                New to Jobster? <a role="button" class="" data-bs-target="#inGP-signup-modal" data-bs-toggle="modal" data-bs-dismiss="modal">Create an account</a>
+                                ¿Quieres unirte? <a role="button" class="" data-bs-target="#inGP-signup-modal" data-bs-toggle="modal" data-bs-dismiss="modal"> Crear Cuenta<span style="font-size: 30px;">🙌</span></a>
                             </div>
                         </form>
                     </div>
@@ -166,6 +227,7 @@
             </div>
         </div>
 
+        <!-- Modal - Creación de Cuenta -->
         <div class="modal fade inGP-user-modal" id="inGP-signup-modal" aria-hidden="true" aria-labelledby="signupModal" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -176,21 +238,21 @@
                         <div class="inGP-user-modal-fig text-center">
                             <img src="media/images/signup-fig.png" alt="Sign up">
                         </div>
-                        <h5 class="modal-title text-center mt-4" id="signupModal">Create an account</h5>
+                        <h5 class="modal-title text-center mt-4" id="signupModal">Unirme</h5>
                         <form class="mt-4">
                             <div class="form-floating mb-3">
                                 <input type="email" class="form-control" id="inGP-signup-email" placeholder="Email address">
-                                <label for="inGP-signup-email">Email address</label>
+                                <label for="inGP-signup-email">Correo Electrónico</label>
                                 <span class="fa fa-envelope-o"></span>
                             </div>
                             <div class="form-floating mb-3">
                                 <input type="password" class="form-control" id="inGP-signup-password" placeholder="Create password">
-                                <label for="inGP-signup-password">Create password</label>
+                                <label for="inGP-signup-password">Contraseña</label>
                                 <span class="fa fa-lock"></span>
                             </div>
-                            <a href="#" class="btn rounded-pill inGP-modal-cta">Continue</a>
-                            <div class="mt-4 text-center inGP-modal-small">
-                                Already have an account? <a role="button" class="" data-bs-target="#inGP-signin-modal" data-bs-toggle="modal">Sign in</a>
+                            <a href="#" class="btn rounded-pill inGP-modal-cta">Continuar</a>
+                            <div class="mt-4 text-center inGP-modal-small align-items-center">                                
+                               <span style="font-size: 25px;" >🤔</span>  ¿Ya tienes una cuenta? <a role="button" class="" data-bs-target="#inGP-signin-modal" data-bs-toggle="modal">Iniciar Sesión</a>
                             </div>
                         </form>
                     </div>
