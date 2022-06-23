@@ -52,14 +52,15 @@ Author URI:
     font-family: 'Makisupa';
     src: url('../fonts/Makisupa.eot');
     src: url('../fonts/Makisupa.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Makisupa.woff2') format('woff2'),
-        url('../fonts/Makisupa.woff') format('woff'),
-        url('../fonts/Makisupa.ttf') format('truetype'),
-        url('../fonts/Makisupa.svg#Makisupa') format('svg');
+         url('../fonts/Makisupa.woff2') format('woff2'),
+         url('../fonts/Makisupa.woff') format('woff'),
+         url('../fonts/Makisupa.ttf') format('truetype'),
+         url('../fonts/Makisupa.svg#Makisupa') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+
  .inGP-root {
     --inGPHoverTransition: 300ms cubic-bezier(0.215,0.61,0.355,1);
     --inGPHoverOpacity: 0.6;
